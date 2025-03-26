@@ -1,0 +1,46 @@
+{
+  "name": "marconi",
+  "version": "1.0.0",
+  "description": "Convert rich documents into Markdown optimized for LLMs",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "rm -rf ./dist && rm -rf types && tsc",
+    "test": "vitest",
+    "start": " npm run build && node dist/index.js"
+  },
+  "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/AdiPat/marconi.git"
+  },
+  "bin": {
+    "marconi": "dist/index.js"
+  },
+  "keywords": [
+    "markdown",
+    "document-conversion",
+    "llm",
+    "nlp",
+    "text-processing"
+  ],
+  "author": "Aditya Patange",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AdiPat/marconi/issues"
+  },
+  "homepage": "https://github.com/AdiPat/marconi#README",
+  "devDependencies": {
+    "@types/node": "^20.12.12",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.11.0",
+    "typescript": "^5.4.5",
+    "vitest": "^2.1.8"
+  },
+  "dependencies": {
+    "chalk": "^4.0.0",
+    "commander": "^13.1.0",
+    "dotenv": "^16.4.5",
+    "uuid": "^11.0.5",
+    "zod": "^3.23.8"
+  }
+}
