@@ -1,2 +1,3 @@
-# markitdown-js
-Convert rich documents into Markdown optimized for LLMs. A TypeScript port of Microsoft's MarkItDown library.
+# Marconi
+
+Convert rich documents into Markdown optimized for LLMs. Inspired by Microsoft's MarkItDown library.
